@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Interactivo</title>
+    <style>
+        .menu {
+            background-color: rgb(29, 245, 0);
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu li a {
+             text-decoration: none;
+             padding: 10px 20px;
+             color: #333;
+             display: block;
+            
+        }
+
+        .menu li a:hover {
+            background-color: grey;
+            color: #fff;
+        }
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: lightseagreen;
+            border: 1px solid #ddd;
+            list-style: none;
+            padding: 0;
+            z-index: 10;
+        }
+
+        .menu li ul li {
+            width: 150px;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+        body{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.uv.mx/">Inicio</a></li>
+            <li>
+                <a href="https://genially.com/">Servicios</a>
+                <ul>
+                    <li><a href="https://slidesgo.com/">Editor de presentaciones</a></li>
+                    <li><a href="https://firebase.google.com/">Desarrollo de apliaciones</a></li>
+                    <li><a href="https://discord.com/">Streaming</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.portafolio.co/">Portafolio</a></li>
+            <li><a href="https://www.uv.mx/comunicate/">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
